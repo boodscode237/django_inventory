@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{{shop_name}}{% endblock %}</title>
+    {% block head %}
+    <!-- Add any additional head content here -->
+    {% endblock %}
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Add your navigation links here -->
+      </nav>
+    </header>
+
+    <main>
+      <h1>{{ shop_name }}</h1>
+
+      <form action="/articles/" method="GET">
+        <input type="text" name="query" />
+        <input type="submit" />
+      </form>
+
+      {% block content %}
+      <!-- This is where the content of your pages will go -->
+      {% endblock %}
+    </main>
+
+    <footer>
+      {% block footer %}
+      <!-- Add your footer content here -->
+      <p>&copy; copywrite {{shop_name}} at {{current_date}}</p>
+      {% endblock %}
+    </footer>
+  </body>
+</html>

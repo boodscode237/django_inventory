@@ -1,0 +1,5 @@
+start project: pipenv run django-admin startproject myproject
+run dev server: pipenv run python manage.py runserver
+
+start app: pipenv run django-admin startapp myapp
+

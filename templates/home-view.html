@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block head %} {% endblock %} {% block content %}
+<ul>
+  {% for article in articles %} {% if article.title %}
+  <li><a href="/articles/{{ article.id }}/">{{ article.title }}</a></li>
+  {% endif %} {% endfor %}
+</ul>
+<ul>
+  {% for item in my_list_str %}
+  <li>number - {{ item }}</li>
+  {% endfor %}
+</ul>
+
+<!-- script tag should have a valid src attribute -->
+<script src="https://example.com/script.js" async defer></script>
+{% endblock %}

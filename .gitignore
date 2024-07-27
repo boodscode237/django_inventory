@@ -1,0 +1,28 @@
+# Django app files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Pipenv files
+Pipfile.lock
+Pipfile
+
+# Virtual environment files
+.venv/
+env/
+.env
+
+# Database files
+db.sqlite3
+
+# Static and media files
+static/
+media/
+
+# Log files
+*.log
+
+# Other files
+.DS_Store
+Thumbs.db
